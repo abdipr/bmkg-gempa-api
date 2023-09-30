@@ -24,20 +24,6 @@ foreach ($html->find("tbody") as $e) {
  $wrn[4] = $wrn[4]->plaintext;
  $wrn[5] = $wrn[5]->plaintext;
  $wrn[6] = $wrn[6]->plaintext;
- $wrn[7] = $wrn[7]->plaintext;
- $wrn[8] = $wrn[8]->plaintext;
- $wrn[9] = $wrn[9]->plaintext;
- $wrn[10] = $wrn[10]->plaintext;
- $wrn[11] = $wrn[11]->plaintext;
- $wrn[12] = $wrn[12]->plaintext;
- $wrn[13] = $wrn[13]->plaintext;
- $wrn[14] = $wrn[14]->plaintext;
- $wrn[15] = $wrn[15]->plaintext;
- $wrn[16] = $wrn[16]->plaintext;
- $wrn[17] = $wrn[17]->plaintext;
- $wrn[18] = $wrn[18]->plaintext;
- $wrn[19] = $wrn[19]->plaintext;
- $wrn[20] = $wrn[20]->plaintext;
     $map = $dir->find("img")[0]->src;
 }
 
