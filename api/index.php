@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json");
-require "../simple_html_dom.php";
+require "./simple_html_dom.php";
 $author = "abdiputranar";
 
 $html = file_get_html(
