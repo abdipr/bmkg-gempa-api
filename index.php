@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json");
-require "simple_html_dom.php";
+require "../simple_html_dom.php";
 $author = "abdiputranar";
 
 $html = file_get_html(
@@ -17,273 +17,29 @@ foreach ($html->find("tbody") as $e) {
     $dir = $b->find("td")[5];
     $lok = $dir->find("a")[0]->plaintext;
     $wrn = $b->find("span");
- $wrn[0] = $wrn[0]->plaintext;
- $wrn[1] = $wrn[1]->plaintext;
- $wrn[2] = $wrn[2]->plaintext;
- $wrn[3] = $wrn[3]->plaintext;
- $wrn[4] = $wrn[4]->plaintext;
- $wrn[5] = $wrn[5]->plaintext;
- $wrn[6] = $wrn[6]->plaintext;
+  for ($i = 0; $i <= 20; $i++) {
+      $wrn[$i] = $wrn[$i]->plaintext;
+  }
     $map = $dir->find("img")[0]->src;
 }
-
-if ($wrn[1] == "") {
-    $wrn[2] = "";
-    $wrn[3] = "";
-    $wrn[4] = "";
-    $wrn[5] = "";
-    $wrn[6] = "";
-    $wrn[7] = "";
-    $wrn[8] = "";
-    $wrn[9] = "";
-    $wrn[10] = "";
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
+for ($i = 1; $i <= 19; $i++) {
+    if ($wrn[$i] == "") {
+        for ($j = $i + 1; $j <= 20; $j++) {
+            $wrn[$j] = "";
+        }
+    }
 }
-if ($wrn[2] == "") {
-    $wrn[3] = "";
-    $wrn[4] = "";
-    $wrn[5] = "";
-    $wrn[6] = "";
-    $wrn[7] = "";
-    $wrn[8] = "";
-    $wrn[9] = "";
-    $wrn[10] = "";
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[3] == "") {
-    $wrn[4] = "";
-    $wrn[5] = "";
-    $wrn[6] = "";
-    $wrn[7] = "";
-    $wrn[8] = "";
-    $wrn[9] = "";
-    $wrn[10] = "";
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[4] == "") {
-    $wrn[5] = "";
-    $wrn[6] = "";
-    $wrn[7] = "";
-    $wrn[8] = "";
-    $wrn[9] = "";
-    $wrn[10] = "";
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[5] == "") {
-    $wrn[6] = "";
-    $wrn[7] = "";
-    $wrn[8] = "";
-    $wrn[9] = "";
-    $wrn[10] = "";
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[6] == "") {
-    $wrn[7] = "";
-    $wrn[8] = "";
-    $wrn[9] = "";
-    $wrn[10] = "";
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[7] == "") {
-    $wrn[8] = "";
-    $wrn[9] = "";
-    $wrn[10] = "";
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[8] == "") {
-    $wrn[9] = "";
-    $wrn[10] = "";
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[9] == "") {
-    $wrn[10] = "";
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[10] == "") {
-    $wrn[11] = "";
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[11] == "") {
-    $wrn[12] = "";
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[12] == "") {
-    $wrn[13] = "";
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[13] == "") {
-    $wrn[14] = "";
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[14] == "") {
-    $wrn[15] = "";
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[15] == "") {
-    $wrn[16] = "";
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[16] == "") {
-    $wrn[17] = "";
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[17] == "") {
-    $wrn[18] = "";
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[18] == "") {
-    $wrn[19] = "";
-    $wrn[20] = "";
-    
-}
-if ($wrn[19] == "") {
-    $wrn[20] = "";
-    
-}
-
 $warn = array_filter(["$wrn[0]", "$wrn[1]", "$wrn[2]", "$wrn[3]", "$wrn[4]", "$wrn[5]", "$wrn[6]", "$wrn[7]", "$wrn[8]", "$wrn[9]", "$wrn[10]", "$wrn[11]", "$wrn[12]", "$wrn[13]", "$wrn[14]", "$wrn[15]", "$wrn[16]", "$wrn[17]", "$wrn[18]", "$wrn[19]", "$wrn[20]"]);
 $warn = json_encode($warn, JSON_PRETTY_PRINT);
 $lb = explode(" ", $lbj);
 $wakt[0] = substr($wak, 0, 10);
 $wakt[1] = substr($wak, 12, 12);
+$id = str_replace(".mmi.jpg", "", str_replace("https://static.bmkg.go.id/", "", $map));
 $result = [
     "status" => "200",
     "author" => "$author",
     "result" => [
+        "id" => "$id",
         "lokasi" => "$lok",
         "waktu" => "$wakt[0] $wakt[1]",
         "lintang" => "$lb[0] $lb[1]",
