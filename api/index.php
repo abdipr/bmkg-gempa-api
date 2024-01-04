@@ -17,9 +17,9 @@ foreach ($html->find("tbody") as $e) {
     $dir = $b->find("td")[5];
     $lok = $dir->find("a")[0]->plaintext;
     $wrn = $b->find("span");
-  for ($i = 0; $i <= 20; $i++) {
-      $wrn[$i] = $wrn[$i]->plaintext;
-  }
+    for ($i = 0; $i <= 20 && isset($wrn[$i]); $i++) {
+    $wrn[$i] = $wrn[$i]->plaintext;
+    }
     $map = $dir->find("img")[0]->src;
 }
 for ($i = 1; $i <= 19; $i++) {
