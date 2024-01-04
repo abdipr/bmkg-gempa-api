@@ -1,9 +1,8 @@
 # bmkg-gempa-api
 BMKG Gempa Unofficial JSON API using Simple HTML DOM PHP.
-Hasil scrape simpel banget.
+Hasil scrape simpel banget, tinggal pake.
 
-## Demos:
+## Demo:
 - https://bmkg-gempa-api-abdipr.vercel.app/
-- https://php-api.abdipr.repl.co/gempa/
 
 Thank you!
