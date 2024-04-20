@@ -51,5 +51,5 @@ $result = [
     ],
 ];
 $result = array_filter($result);
-echo str_replace(']",', '],', str_replace('g": "', 'g": ', str_replace("awarn", $warn, str_replace("\/", "/", json_encode($result, JSON_PRETTY_PRINT)))));
+echo str_replace(']",', '],', str_replace("awarn", $warn, str_replace("\/", "/", json_encode($result, JSON_PRETTY_PRINT))));
 ?>
